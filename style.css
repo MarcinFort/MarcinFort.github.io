@@ -1,28 +1,54 @@
 body {
-    background-color: mediumseagreen;
+    background-color: black;
+    font-family: "Century Schoolbook L";
+    color: antiquewhite;
 }
 
 #menu {
     height: 100px;
 }
 
-#menu > ul {
-    display: block;
+#menu li {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+#menu li:last-child {
+    padding-right: 0px;
+}
+
+.title, .menu-container {
+    text-align: center;
+    border: 1px antiquewhite solid;
+    display: inline-block;
+}
+
+.title, ul {
+    padding: 16px;
+    margin: 0px;
+}
+
+.title {
+    float: left;
+    font-variant-caps: all-small-caps;
+}
+
+.menu-container {
+    float: right;
 }
 
 #header {
-    background-color: yellow;
-    height: 200px;
+    background-image: url("Assets/blue-2702172_1920.jpg");
+    background-repeat: no-repeat;
     width: 100%;
-    text-align: center;
-}
-
-#content {
-    height: 200px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #links {
-    height: 200px;
+    min-height: 100px;
 }
 
 #links > a {
@@ -30,5 +56,7 @@ body {
 }
 
 #footer {
-    height: 100px;
+    min-height: 80px;
+    padding-top: 20px;
+    text-align: center;
 }
