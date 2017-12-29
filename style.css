@@ -60,3 +60,31 @@ body {
     padding-top: 20px;
     text-align: center;
 }
+
+form {
+    border: 1px solid white;
+    border-radius: 5px;
+    display: inline-block; 
+    padding: 20px 25px 20px 20px; 
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div * {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 3px;
+}
+
+textarea {
+    min-width: 245px;
+    min-height: 200px;
+}
+
+input[type="antybot"] {
+    display: none;
+}
