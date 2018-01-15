@@ -4,16 +4,22 @@ body {
     color: antiquewhite;
 }
 
+body > section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+
 #menu {
     height: 100px;
 }
 
-#menu li {
+li {
     display: inline-block;
     padding-right: 5px;
 }
 
-#menu li:last-child {
+li:last-child {
     padding-right: 0px;
 }
 
@@ -38,7 +44,7 @@ body {
 }
 
 #header {
-    background-image: url("Assets/blue-2702172_1920.jpg");
+    background-image: url("../images/blue-2702172_1920.jpg");
     background-repeat: no-repeat;
     width: 100%;
     min-height: 400px;
@@ -47,12 +53,46 @@ body {
     justify-content: center;
 }
 
+a {
+	 text-decoration: none;
+	 opacity: 0.8;
+}
+
+a:visited {
+	 color: #73C3CC;
+}
+
+a:hover {
+	 text-decoration: underline;
+	 opacity: 1;
+}
+
+.special {
+	 font-variant: small-caps;
+}
+
 #links {
     min-height: 100px;
 }
 
-#links > a {
+#links a {
     display: block;
+    opacity: 0.8;
+    padding-bottom: auto;
+    padding-top: auto;
+    margin-bottom: 3px;
+}
+
+#links div {
+	 height: 32px;
+	 padding-bottom: 2px;
+	 margin-bottom: 5px;
+}
+
+a > img {
+	 height: 32px;
+	 width: 32px;
+	 padding-right: 4px;
 }
 
 #footer {
@@ -87,4 +127,19 @@ textarea {
 
 input[type="antibot"] {
     display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	 	 
+	 #menu {
+			height: auto;	 
+	 }	 
+	 
+	 .title, .menu-container {
+			margin: 0 auto;
+			display: block;
+			float: none;
+			margin-bottom: 10px;
+	 }
+
 }

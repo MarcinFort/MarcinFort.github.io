@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-// Add an antibot field handler
+// Antibot field handler
   
   $(document).on("submit", "form", function(e) {	
     if ($('input[type="antibot"]').val().length > 0) {
@@ -12,5 +12,14 @@ $(document).ready(function(){
       $('form').submit();
     }
   });
+  
+// Section scroll animation  
+  
+  $('#menu a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 700);
+    return false;
+});
 
 });
