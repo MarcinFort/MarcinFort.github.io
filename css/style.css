@@ -44,13 +44,18 @@ li:last-child {
 }
 
 #header {
-    background-image: url("../images/blue-2702172_1920.jpg");
+    background-image: url("../images/photoshop-2845779_1920.jpg");
     background-repeat: no-repeat;
     width: 100%;
     min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+#header div {
+    position: relative;
 }
 
 a {
@@ -92,6 +97,23 @@ a > img {
 	 height: 32px;
 	 width: 32px;
 	 padding-right: 4px;
+}
+
+h1, h2, h1::after {
+    text-align: center;
+    margin: auto;
+}
+
+h1::after {
+    content: "";
+    height: 2px;
+    width: 20%;
+    background-color: antiquewhite;
+    position: absolute;
+    color: antiquewhite;
+    right: 0;
+    left: 0;
+    bottom: 39px;
 }
 
 #footer {
@@ -141,4 +163,10 @@ input[type="antibot"] {
 			margin-bottom: 10px;
 	 }
 
+}
+
+@media only screen and (max-width: 334px) {
+    h1::after {
+        bottom: 80px;
+    }
 }
