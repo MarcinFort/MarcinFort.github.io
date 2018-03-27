@@ -44,14 +44,29 @@ li:last-child {
 }
 
 #header {
-    background-image: url("../images/photoshop-2845779_1920.jpg");
-    background-repeat: no-repeat;
     width: 100%;
     min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
+}
+
+#header:before {
+    background: url("../images/PIA11796.jpg") 0 0 repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 1000%;
+    height: 1000%;
+    z-index: -1;
+    animation: spin 300s linear infinite;
+}
+
+@keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
 }
 
 #header div {
@@ -59,12 +74,12 @@ li:last-child {
 }
 
 a {
-	 text-decoration: none;
-	 opacity: 0.8;
+	text-decoration: none;
+	opacity: 0.8;
 }
 
 a:visited {
-	 color: #73C3CC;
+    color: #73C3CC;
 }
 
 a:hover {
@@ -88,9 +103,9 @@ a:hover {
 }
 
 #links div {
-	 height: 32px;
-	 padding-bottom: 2px;
-	 margin-bottom: 5px;
+	height: 32px;
+	padding-bottom: 2px;
+	margin-bottom: 5px;
 }
 
 #links span {
@@ -102,9 +117,9 @@ a:hover {
 }
 
 a > img {
-	 height: 32px;
-	 width: 32px;
-	 padding-right: 4px;
+	height: 32px;
+	width: 32px;
+	padding-right: 4px;
 }
 
 h1, h2, h1::after {
@@ -160,16 +175,16 @@ input[type="antibot"] {
 
 @media only screen and (max-width: 768px) {
 	 	 
-	 #menu {
-			height: auto;	 
-	 }	 
+	#menu {
+		height: auto;	 
+	}	 
 	 
-	 .title, .menu-container {
-			margin: 0 auto;
-			display: block;
-			float: none;
-			margin-bottom: 10px;
-	 }
+	.title, .menu-container {
+		margin: 0 auto;
+		display: block;
+		float: none;
+		margin-bottom: 10px;
+	}
 
 }
 
