@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    font-family: "Century Schoolbook L";
+    font-family: "Varela", sans-serif, "Century Schoolbook L";
     color: antiquewhite;
 }
 
@@ -21,6 +21,14 @@ li {
 
 li:last-child {
     padding-right: 0px;
+}
+
+li span {
+    padding-left: 4px;
+}
+
+li span:hover {
+    text-decoration: underline;
 }
 
 .title, .menu-container {
@@ -79,11 +87,10 @@ a {
 }
 
 a:visited {
-    color: #73C3CC;
+    color: rgb(169, 213, 218);
 }
 
 a:hover {
-	 text-decoration: underline;
 	 opacity: 1;
 }
 
