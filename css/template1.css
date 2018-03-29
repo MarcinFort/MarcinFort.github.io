@@ -27,3 +27,30 @@ header select {
 option {
     font-variant: small-caps;
 }
+
+#main {
+    /* background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+}
+
+#main::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;   
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/template1/girl-1312957_1920.jpg');
+    background-size: cover;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
