@@ -1,0 +1,29 @@
+body {
+    background: #EFF2FF;
+}
+
+header {
+    height: 10em;
+}
+
+
+header h3 {
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    font-family: serif;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+header select {
+    margin: auto;
+    display: block;
+    color: antiquewhite;
+    background: black;
+    width: 90%;
+}
+
+option {
+    font-variant: small-caps;
+}
