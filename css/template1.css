@@ -1,5 +1,6 @@
 body {
     background: #EFF2FF;
+    box-sizing: border-box;
 }
 
 header {
@@ -31,7 +32,7 @@ option {
 #main {
     position: relative;
     width: 100%;
-    min-height: 400px;
+    min-height: 500px;
     height: 100%;
 }
 
@@ -44,10 +45,52 @@ option {
     height: 100%;
     background-image: url('../images/template1/girl-1312957_1920.jpg');
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.4;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-  }
+}
+
+.carousel_item_content {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.carousel_overtitle {
+    font-style: italic;
+    padding: 3px 0;
+}
+
+.carousel_title {
+    font-size: 26px;
+    padding: 3px 0;
+    font-style: italic;
+    font-family: serif;
+}
+
+.carousel_text {
+    padding: 5px 0;
+}
+
+.carousel_item_content button {
+    padding: 8px 15px;
+    background-color: darkmagenta;
+    color: antiquewhite;
+    border: transparent solid 1px;
+    transition: all 1.5s;
+}
+
+.carousel_item_content button:hover {
+    background-color: transparent;
+    color: black;
+    border: black solid 1px;
+}
+
+.carousel-indicators {
+    bottom: -100px !important;
+}
+
+
   
