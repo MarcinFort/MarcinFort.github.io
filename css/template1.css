@@ -1,6 +1,7 @@
 body {
     background: #EFF2FF;
     box-sizing: border-box;
+    font-family: Verdana;
 }
 
 header {
@@ -52,9 +53,13 @@ option {
     right: 0;
 }
 
+#carouselExampleControls {
+    padding-top: 80px;
+}
+
 .carousel_item_content {
     text-align: center;
-    width: 80%;
+    width: 75%;
     margin: auto;
 }
 
@@ -80,6 +85,7 @@ option {
     color: antiquewhite;
     border: transparent solid 1px;
     transition: all 1.5s;
+    margin-bottom: 30px;
 }
 
 .carousel_item_content button:hover {
