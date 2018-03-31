@@ -34,7 +34,7 @@ option {
     position: relative;
     width: 100%;
     min-height: 700px;
-    height: 100%;
+    height: auto;
 }
 
 #main::after {
@@ -167,4 +167,39 @@ button {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
-  
+
+#footer_divs > div, #social_media {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h6, #social_media {
+    width: 100%;
+}
+
+#social_media {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 10%;
+}
+
+address, #phone, #email {
+    width: 90%;
+}
+
+.social {
+    margin-right: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: lightgray;
+    display: flex;
+}
+
+.social svg {
+    padding: 1px;
+    display: block;
+    margin: auto;
+}
