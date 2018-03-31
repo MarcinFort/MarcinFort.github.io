@@ -33,7 +33,7 @@ option {
 #main {
     position: relative;
     width: 100%;
-    min-height: 500px;
+    min-height: 700px;
     height: 100%;
 }
 
@@ -98,5 +98,17 @@ option {
     bottom: -100px !important;
 }
 
+#pictures_frame {
+    background-color: lightgray;
+    position: relative;
+    top: -100px;
+    margin: auto;
+    border-radius: 10px;
+    width: 90%;
+}
 
+#pictures_frame img {
+    width: 100%;
+    padding: 20px;
+}
   
