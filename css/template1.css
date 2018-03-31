@@ -1,5 +1,5 @@
 body {
-    background: #EFF2FF;
+    background: rgb(243, 237, 234);
     box-sizing: border-box;
     font-family: Verdana;
 }
@@ -198,8 +198,19 @@ address, #phone, #email {
     display: flex;
 }
 
+.social:hover {
+    cursor: pointer;
+}
+
 .social svg {
     padding: 1px;
     display: block;
     margin: auto;
+}
+
+#links1 a, #links2 a {
+    display: block;
+    width: 100%;
+    color: darkmagenta;
+    text-decoration: none;
 }
