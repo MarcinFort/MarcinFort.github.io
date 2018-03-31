@@ -177,6 +177,12 @@ h6, #social_media {
     width: 100%;
 }
 
+h6 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
 #social_media {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -213,4 +219,22 @@ address, #phone, #email {
     width: 100%;
     color: darkmagenta;
     text-decoration: none;
+}
+
+#contact input {
+    background-color: lightgray;
+    border-radius: 0;
+    border: transparent 1px solid;
+    transition: border 1s;
+    margin-bottom: 15px;
+    width: 60%;
+    height: 40px;
+}
+
+#contact input:focus {
+    border: darkmagenta 1px solid;
+}
+
+#form_container {
+    flex-basis: 100%;
 }
