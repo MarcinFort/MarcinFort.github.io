@@ -79,7 +79,7 @@ option {
     padding: 5px 0;
 }
 
-.carousel_item_content button {
+.carousel_item_content button, #main2 button {
     padding: 8px 15px;
     background-color: darkmagenta;
     color: antiquewhite;
@@ -88,10 +88,15 @@ option {
     margin-bottom: 30px;
 }
 
-.carousel_item_content button:hover {
+.carousel_item_content button:hover, #main2 button:hover {
     background-color: transparent;
     color: black;
     border: black solid 1px;
+}
+
+#main2 button {
+    margin: auto;
+    display: block;
 }
 
 .carousel-indicators {
@@ -110,5 +115,18 @@ option {
 #pictures_frame img {
     width: 100%;
     padding: 20px;
+}
+
+#main_story {
+    margin: auto;
+    margin-top: 30px;
+    width: 90%;
+}
+
+#main_story img {
+    padding: 10px;
+    width: 100%;
+    border: 5px white solid;
+    outline: 1px lightgray solid;
 }
   
