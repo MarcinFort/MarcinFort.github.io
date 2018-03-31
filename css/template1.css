@@ -68,18 +68,18 @@ option {
     padding: 3px 0;
 }
 
-.carousel_title {
+.carousel_title, .story_title, h5 {
     font-size: 26px;
     padding: 3px 0;
     font-style: italic;
     font-family: serif;
 }
 
-.carousel_text {
+.carousel_text, .story_text {
     padding: 5px 0;
 }
 
-.carousel_item_content button, #main2 button {
+button {
     padding: 8px 15px;
     background-color: darkmagenta;
     color: antiquewhite;
@@ -117,16 +117,54 @@ option {
     padding: 20px;
 }
 
-#main_story {
-    margin: auto;
-    margin-top: 30px;
+#main_story, .other_story {
+    margin: 30px auto;
     width: 90%;
 }
 
-#main_story img {
+#main_story img, .other_story img {
     padding: 10px;
     width: 100%;
     border: 5px white solid;
     outline: 1px lightgray solid;
+}
+
+.story_media span {
+    color: darkmagenta;
+}
+
+#main_story:after {
+    content: "";
+    height: 2px;
+    width: 80%;
+    background-color: antiquewhite;
+    position: absolute;
+    color: antiquewhite;
+    right: 0;
+    left: 0;
+    margin: 20px auto;
+}
+
+#separator {
+    height: auto;
+    width: 100%;
+    background: url("../images/template1/Meadow-background.jpg");
+}
+
+#separator * {
+    display: block;
+    margin: auto;
+}
+
+#separator_content {
+    width: 90%;
+    padding: 30px 0;
+}
+
+#separator h5 {
+    font-style: italic;
+    color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
   
