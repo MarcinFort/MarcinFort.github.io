@@ -112,14 +112,15 @@ button {
     margin-bottom: 30px;
 }
 
-.carousel_item_content button:hover, #main2 button:hover {
+button:hover {
     background-color: transparent;
     color: black;
     border: black solid 1px;
+    cursor: pointer;
 }
 
-#main2 button {
-    margin: auto;
+#main2 > button {
+    margin: -70px auto 70px;
     display: block;
 }
 
@@ -192,8 +193,13 @@ button {
 }
 
 #separator_content {
+    max-width: 1150px;
     width: 90%;
     padding: 30px 0;
+}
+
+#separator_content button:hover {
+    color: antiquewhite;
 }
 
 #separator h5 {
