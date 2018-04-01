@@ -4,8 +4,11 @@ body {
     font-family: Verdana;
 }
 
-header {
-    height: 10em;
+#header_wrapper {
+    margin: auto;
+    height: auto;
+    min-height: 10em;
+    max-width: 1150px;
 }
 
 header h3 {
@@ -15,6 +18,8 @@ header h3 {
     font-style: italic;
     font-variant: small-caps;
     text-align: center;
+    min-width: 20%;
+    display: block;
 }
 
 header select {
@@ -23,6 +28,25 @@ header select {
     color: antiquewhite;
     background: black;
     width: 90%;
+}
+
+header #menu {
+    display: none;
+    margin: auto 10px auto 0;
+}
+
+.dropdown-menu {
+    background-color: transparent;
+}
+
+.nav-item a {
+    color: black;
+    font-variant: small-caps;
+}
+
+.nav-item a:hover {
+    color: darkmagenta !important;
+    background-color: transparent;
 }
 
 option {
@@ -254,4 +278,29 @@ address, #phone {
 
 #copyright {
     font-size: 10px;
+}
+
+@media screen and (min-width: 650px) {
+    #header_wrapper {
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header h3 {
+        padding-left: 20px;
+    }
+    header select {
+        width: 20%;
+        margin: auto 10px auto 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    header select {
+        display: none;
+    }
+    header #menu {
+        display: block;
+    }
 }
