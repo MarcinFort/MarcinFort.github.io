@@ -134,11 +134,18 @@ button {
     margin: auto;
     border-radius: 10px;
     width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1150px;
 }
 
 #pictures_frame img {
     width: 100%;
-    padding: 20px;
+    padding: 20px 20px 0;
+}
+
+#pictures_frame img:last-child {
+    padding-bottom: 20px;
 }
 
 #main_story, .other_story {
@@ -315,5 +322,13 @@ address, #phone {
     }
     header #menu {
         display: block;
+    }
+    #pictures_frame img {
+        width: 33.3333%;
+        padding: 20px 20px 20px 0;
+    }
+    
+    #pictures_frame img:first-child {
+        padding-left: 20px;
     }
 }
