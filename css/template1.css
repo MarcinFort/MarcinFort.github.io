@@ -151,6 +151,14 @@ button {
 #main_story, .other_story {
     margin: 30px auto;
     width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1150px;
+}
+
+#main_story {
+    padding-bottom: 30px;
+    border-bottom: 1px solid darkgrey;
 }
 
 #main_story img, .other_story img {
@@ -160,20 +168,16 @@ button {
     outline: 1px lightgray solid;
 }
 
-.story_media span {
-    color: darkmagenta;
+#other_stories {
+    max-width: 1150px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
 }
 
-#main_story:after {
-    content: "";
-    height: 2px;
-    width: 80%;
-    background-color: antiquewhite;
-    position: absolute;
-    color: antiquewhite;
-    right: 0;
-    left: 0;
-    margin: 20px auto;
+.story_media span {
+    color: darkmagenta;
 }
 
 #separator {
@@ -313,6 +317,23 @@ address, #phone {
         width: 20%;
         margin: auto 10px auto 0;
     }
+    .other_story {
+        width: 50%;
+        padding: 10px 10px 0 10px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 832px) {
+    #main_story img {
+        width: 40%;
+    }
+
+    #main_story .story_content {
+        width: 60%;
+        padding-left: 18px;
+        padding-right: 5px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -330,5 +351,9 @@ address, #phone {
     
     #pictures_frame img:first-child {
         padding-left: 20px;
+    }
+
+    .other_story {
+        width: 33.3333%;
     }
 }
