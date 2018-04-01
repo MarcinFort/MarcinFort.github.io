@@ -203,6 +203,13 @@ button {
     text-align: center;
 }
 
+#footer_divs {
+    max-width: 1150px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
 #footer_divs > div, #social_media {
     display: flex;
     flex-wrap: wrap;
@@ -288,8 +295,15 @@ address, #phone {
     border-bottom: 1px darkgray solid;
 }
 
+footer > * {
+    max-width: 1150px;
+}
+
 #copyright {
     font-size: 10px;
+    max-width: 1150px;
+    display: block;
+    margin: auto;
 }
 
 @media screen and (max-width: 319px) {
@@ -321,6 +335,9 @@ address, #phone {
         width: 50%;
         padding: 10px 10px 0 10px;
         margin-bottom: 0;
+    }
+    #footer_divs > div {
+        width: 50%;
     }
 }
 
@@ -356,4 +373,9 @@ address, #phone {
     .other_story {
         width: 33.3333%;
     }
+
+    #footer_divs > div {
+        width: 25%;
+    }
+
 }
