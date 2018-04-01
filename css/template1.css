@@ -185,6 +185,7 @@ button:hover {
     height: auto;
     width: 100%;
     background: url("../images/template1/Meadow-background.jpg");
+    margin: 30px 0 50px;
 }
 
 #separator * {
