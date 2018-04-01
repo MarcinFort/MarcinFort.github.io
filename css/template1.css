@@ -4,7 +4,7 @@ body {
     font-family: Verdana;
 }
 
-#header_wrapper {
+#header_wrapper, #main_wrapper {
     margin: auto;
     height: auto;
     min-height: 10em;
@@ -78,6 +78,7 @@ option {
 
 #carouselExampleControls {
     padding-top: 80px;
+    width: 90%;
 }
 
 .carousel_item_content {
@@ -278,6 +279,18 @@ address, #phone {
 
 #copyright {
     font-size: 10px;
+}
+
+@media screen and (max-width: 319px) {
+    #main {
+        min-height: 900px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 435px) {
+    #main {
+        min-height: 800px;
+    }
 }
 
 @media screen and (min-width: 650px) {
