@@ -87,11 +87,15 @@ a {
 }
 
 a:visited {
-    color: rgb(169, 213, 218);
+    color: rgb(220, 240, 243);
 }
 
 a:hover {
 	 opacity: 1;
+}
+
+#portfolio_templates a {
+    opacity: 1;
 }
 
 .special {
