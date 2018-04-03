@@ -9,6 +9,7 @@ header, section, footer {
 
 header, section {
     min-height: 100vh;
+    height: auto;
 }
 
 .wrapper {
@@ -92,6 +93,60 @@ header {
 
 div.active {
     border-bottom: 1px antiquewhite solid;
+}
+
+#carouselExampleIndicators {
+    top: 20vh;
+    color: antiquewhite;
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.carousel-item {
+    padding-bottom: 30px;
+}
+
+.carousel-content {
+    padding-top: 15px;
+    max-width: 70%;
+    margin: auto;
+    min-height: 150px;
+}
+
+.carousel-slogan {
+    border-bottom: 1px solid lightseagreen;
+    font-size: 28px;
+    font-variant: small-caps;
+}
+
+.carousel-indicators li {
+    top: 50px;
+}
+
+#carouselExampleIndicators button {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: lightseagreen;
+    border: 1px solid lightseagreen;
+    transition: all 1s;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+#carouselExampleIndicators button:hover {
+    background-color: lightseagreen;
+    color: antiquewhite;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-slogan {
+        font-size: 40px;
+    }
+    .carousel-content {
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 900px) {
