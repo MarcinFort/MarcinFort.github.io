@@ -140,6 +140,12 @@ div.active {
     color: antiquewhite;
 }
 
+#watch {
+    background-image: url('../images/template2/architecture-buildings-city-311012.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media screen and (min-width: 768px) {
     .carousel-slogan {
         font-size: 40px;
