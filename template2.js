@@ -13,11 +13,6 @@ $(document).scroll(function() {
     }
 })
 
-// $("#menu_options a").on("click", (e) => {
-//     e.preventDefault();
-
-// });
-
 $(window).on("hashchange", function () {
     window.scrollTo(window.scrollX, window.scrollY + 1);
 });
