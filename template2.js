@@ -11,7 +11,7 @@ $(document).scroll(function() {
             $("#menu_options").find("div[id='a_"+currentPos+"']").addClass("active");
         }
     }
-})
+});
 
 $(window).on("hashchange", function () {
     window.scrollTo(window.scrollX, window.scrollY + 1);

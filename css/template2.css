@@ -5,9 +5,6 @@ body {
 
 header, section, footer {
     width: 100%;
-}
-
-header, section {
     min-height: 100vh;
     height: auto;
 }
@@ -142,6 +139,12 @@ div.active {
 
 #watch {
     background-image: url('../images/template2/architecture-buildings-city-311012.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-image: url('../images/template2/2017-02-03-08-30-25.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
