@@ -10,10 +10,11 @@ header, section, footer {
 }
 
 .wrapper {
-    margin:auto;
+    margin: auto;
     width: 100%;
     max-width: 1150px;
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .wrapper > * {
@@ -121,7 +122,7 @@ div.active {
     top: 50px;
 }
 
-#carouselExampleIndicators button {
+button {
     width: 150px;
     height: 50px;
     background-color: transparent;
@@ -132,9 +133,29 @@ div.active {
     font-weight: bold;
 }
 
-#carouselExampleIndicators button:hover {
+button:hover  {
     background-color: lightseagreen;
     color: antiquewhite;
+}
+
+#about {
+    padding-bottom: 5%;
+}
+
+#about_logo, #about_content {
+    width: 100%;
+}
+
+#about_logo {
+    padding: 10% 10% 0;
+}
+
+#about_content {
+    padding: 0 10% 10%;
+}
+
+#about_logo img {
+    width: 100%;
 }
 
 #watch {
@@ -156,6 +177,17 @@ footer {
     .carousel-content {
         font-size: 20px;
     }
+    #about {
+        padding-top: 5%;
+    }
+    #about_logo {
+        width: 50%;
+        padding: 0;
+    }
+    #about_content {
+        width: 50%;
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -168,4 +200,13 @@ footer {
     #menu_options a:hover {
         color: lightseagreen;     
     }
+    #about_logo {
+        width: 40%;
+        padding: 0;
+    }
+    #about_content {
+        width: 60%;
+        padding: 20px;
+    }
+
 }
