@@ -164,6 +164,28 @@ button:hover  {
     background-size: cover;
 }
 
+#watch * {
+    color: antiquewhite;
+    width: 100%;
+    margin: auto;
+}
+
+#watch_icon {
+    height: 60vh;
+    padding: 100px 0 50px 0;
+}
+
+#watch_icon svg {
+    height: 100%;
+    cursor: pointer;
+}
+
+#watch p {
+    text-align: center;
+    font-size: 2em;
+    padding: 5%;
+}
+
 footer {
     background-image: url('../images/template2/2017-02-03-08-30-25.jpeg');
     background-repeat: no-repeat;
