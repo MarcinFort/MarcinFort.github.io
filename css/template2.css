@@ -256,6 +256,13 @@ button:hover  {
     border: 1px solid antiquewhite;
     margin: 15px 4%;
     width: 100%;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.photo_container:hover {
+    transform: rotateY(360deg);
 }
 
 .photo_container img {
