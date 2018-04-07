@@ -186,6 +186,55 @@ button:hover  {
     padding: 5%;
 }
 
+.section_header {
+    width: 100%;
+    padding: 50px 20% 0;
+}
+
+.section_header * {
+    text-align: center;
+}
+
+.section_header h3 {
+    font-variant: small-caps;
+    padding: 10px;
+}
+
+.section_header p {
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightseagreen;
+}
+
+#expertise .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#expertise_content1 {
+    border-bottom: 1px solid lightseagreen;
+}
+
+#expertise_content1, #expertise_content2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.expertise_point {
+    padding: 20px;
+    width: 100%;
+}
+
+.expertise_point * {
+    text-align: center;
+}
+
+.expertise_point svg {
+    margin: 20px auto 15px;
+    display: block;
+    color: lightseagreen;
+
+}
+
 footer {
     background-image: url('../images/template2/2017-02-03-08-30-25.jpeg');
     background-repeat: no-repeat;
@@ -209,6 +258,9 @@ footer {
     #about_content {
         width: 50%;
         padding: 20px;
+    }
+    .expertise_point {
+        width: 33.3333%;
     }
 }
 
