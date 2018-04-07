@@ -235,10 +235,61 @@ button:hover  {
 
 }
 
+#teams {
+    background-color: #090927;
+    color: antiquewhite;
+}
+
+#photos {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#photos * {
+    text-align: center;
+}
+
+.photo_container {
+    padding: 10px;
+    border: 1px solid antiquewhite;
+    margin: 15px 4%;
+    width: 100%;
+}
+
+.photo_container img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo_caption h5 {
+    font-variant: small-caps;
+}
+
+#teams p {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+#teams button {
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 80px;
+}
+
 footer {
     background-image: url('../images/template2/2017-02-03-08-30-25.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and (min-width: 600px) {
+    .photo_container {
+        width: 42%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -282,5 +333,8 @@ footer {
         width: 60%;
         padding: 20px;
     }
-
+    .photo_container {
+        width: 21%;
+        margin: 20px 2%;
+    }
 }
