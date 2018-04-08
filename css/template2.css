@@ -340,6 +340,29 @@ button:hover  {
     background-size: cover;
 }
 
+#carousel2 ol {
+    align-items: flex-end;
+}
+
+#carousel2 li {
+    text-indent: 0;
+    height: auto;
+    width: 80px;
+    background: transparent;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: width 1s;
+}
+
+#carousel2 img {
+    border-radius: 50%;
+    border: 1px solid lightseagreen;
+}
+
+#carousel2 li.active {
+    width: 110px;
+}
+
 footer {
     background-image: url('../images/template2/2017-02-03-08-30-25.jpeg');
     background-repeat: no-repeat;
