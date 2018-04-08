@@ -93,7 +93,7 @@ div.active {
     border-bottom: 1px antiquewhite solid;
 }
 
-#carouselExampleIndicators {
+#carousel1, #carousel2 {
     top: 20vh;
     color: antiquewhite;
     text-align: center;
