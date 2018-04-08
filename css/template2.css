@@ -334,6 +334,12 @@ button:hover  {
     margin: auto;
 }
 
+#people_say {
+    background-image: url("../images/template2/Dark-forest-combo-9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 footer {
     background-image: url('../images/template2/2017-02-03-08-30-25.jpeg');
     background-repeat: no-repeat;
