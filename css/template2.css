@@ -370,6 +370,10 @@ button:hover  {
     position: relative;
 }
 
+#carousel2 .carousel-inner > div {
+    min-height: 300px;
+}
+
 #carousel2 img {
     border-radius: 50%;
     border: 2px solid lightseagreen;
