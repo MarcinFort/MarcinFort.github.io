@@ -191,11 +191,11 @@ button:hover  {
     padding: 60px 20% 0;
 }
 
-.section_header * {
+.section_header *, #contact h4 {
     text-align: center;
 }
 
-.section_header h3 {
+.section_header h3, #contact h4 {
     font-variant: small-caps;
     padding: 10px;
 }
@@ -390,6 +390,47 @@ button:hover  {
     opacity: 1;
 }
 
+#contact_panel, #clients_panel {
+    width: 100%;
+    padding: 50px;
+    margin-top: 0;
+}
+
+#contact button {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+#contact_form * {
+    border-radius: 0;
+    margin: 8px 0;
+    border: none;
+    transition: all 0.6s;
+}
+
+#contact_form *:focus {
+    outline: 2px ridge;
+    box-shadow: 5px currentColor;
+}
+
+#clients {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.client {
+    width: 50%;
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.client svg {
+    cursor: pointer;
+}
+
 footer {
     background-image: url('../images/template2/2017-02-03-08-30-25.jpeg');
     background-repeat: no-repeat;
@@ -452,6 +493,9 @@ footer {
     .photo_container {
         width: 21%;
         margin: 20px 2%;
+    }
+    #contact_panel, #clients_panel {
+        width: 50%;
     }
 }
 
