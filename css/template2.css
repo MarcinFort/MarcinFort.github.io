@@ -338,10 +338,25 @@ button:hover  {
     background-image: url("../images/template2/Dark-forest-combo-9.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 200px;
+}
+
+#carousel2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#carousel2 .carousel-inner, .indicators  {
+    width: 100%;
+}
+
+.indicators {
+    padding-top: 150px;
 }
 
 #carousel2 ol {
     align-items: flex-end;
+    bottom: 0;
 }
 
 #carousel2 li {
@@ -352,15 +367,23 @@ button:hover  {
     margin-right: 10px;
     margin-left: 10px;
     transition: width 1s;
+    position: relative;
 }
 
 #carousel2 img {
     border-radius: 50%;
-    border: 1px solid lightseagreen;
+    border: 2px solid lightseagreen;
+    transition: opacity 1s;
+    opacity: 0.5;
 }
 
 #carousel2 li.active {
     width: 110px;
+}
+
+#carousel2 li.active img {
+    width: 110px;
+    opacity: 1;
 }
 
 footer {
