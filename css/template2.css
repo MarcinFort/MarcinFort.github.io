@@ -407,6 +407,10 @@ button:hover  {
     opacity: 1;
 }
 
+#contact .wrapper {
+    padding-top: 10px;
+}
+
 #contact_panel, #clients_panel {
     width: 100%;
     padding: 50px;
