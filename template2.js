@@ -6,6 +6,13 @@ $(document).scroll(function() {
     }
     if( $(this).scrollTop() >= 0) {
         let currentPos = Math.ceil($(this).scrollTop() / $(window).height());
+        // Hacky fixes for the current position
+        if (currentPos < 1) {
+            currentPos = 1;
+        }
+        if (currentPos > 8) {
+            currentPos = 8;
+        }
         if (currentPos !== 3) {
             $("#menu_options").find("div").removeClass();
             $("#menu_options").find("div[id='a_"+currentPos+"']").addClass("active");
