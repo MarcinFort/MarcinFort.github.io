@@ -16,3 +16,14 @@ $(document).scroll(function() {
 $(window).on("hashchange", function () {
     window.scrollTo(window.scrollX, window.scrollY + 1);
 });
+
+$('#hamburger').on('click', e => {
+    e.preventDefault();
+    $('#menu_options').toggle();
+});
+
+$('#menu_options a').on('click', e => {
+    if ($('#hamburger').css('display') === 'block') {
+        $('#menu_options').hide();
+    }
+});

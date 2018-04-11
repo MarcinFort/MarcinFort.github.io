@@ -45,16 +45,12 @@ header {
     opacity: 0.5;
 }
 
-#menu_options {
-    display: none;
-    margin-right: 12px;
-}
-
 #logo {
     display: flex;
     flex-wrap: wrap;
     margin-left: 15px;
     align-items: center;
+    position: fixed;
 }
 
 #logo img {
@@ -74,6 +70,16 @@ header {
     margin-right: 15px;
 }
 
+#menu_options {
+    display: none;
+    top: 70px;
+    position: relative;
+    width: 100%;
+    background-color: darkslategray;
+    opacity: 1;
+    z-index: 100;
+}
+
 #menu_options a {
     font-variant: small-caps;
     color: antiquewhite;
@@ -83,11 +89,21 @@ header {
     display: block;
     margin: auto;
     padding: 5px 10px;
+    opacity: 1;
+}
+
+#menu_options a:hover {
+    color: lightseagreen;     
 }
 
 #menu_options div {
-    display: inline-block;
     text-align: center;
+}
+
+#hamburger {
+    position: fixed;
+    right: 10px;
+    display: block;
 }
 
 div.active {
@@ -583,10 +599,17 @@ footer h4 {
     }
     #menu_options {
         display: block;
+        margin-right: 12px;
+        top: auto;
+        position: absolute;
+        right: 10px;
+        width: auto;
+        background: transparent;
     }
-    #menu_options a:hover {
-        color: lightseagreen;     
+    #menu_options div {
+        display: inline-block;
     }
+    
     #about_logo {
         width: 40%;
         padding: 0;
