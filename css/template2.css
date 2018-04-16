@@ -118,6 +118,19 @@ div.active {
     padding-right: 4%;
 }
 
+#carousel1 li {
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    background-color: antiquewhite;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#carousel1 li.active {
+    background-color: lightseagreen;
+}
+
 .carousel-item {
     padding-bottom: 30px;
 }
