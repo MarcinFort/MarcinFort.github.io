@@ -1,0 +1,209 @@
+body {
+    background-color: black;
+    font-family: "Varela", sans-serif, "Century Schoolbook L";
+    color: antiquewhite;
+}
+
+body > section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 12px;
+}
+
+#topmost {
+    height: 100vh;
+}
+
+#menu {
+    height: 100px;
+}
+
+li {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+li:last-child {
+    padding-right: 0px;
+}
+
+li span {
+    padding-left: 4px;
+}
+
+li span:hover {
+    text-decoration: underline;
+}
+
+.title, .menu-container {
+    text-align: center;
+    border: 1px antiquewhite solid;
+    display: inline-block;
+}
+
+.title, ul {
+    padding: 16px;
+    margin: 0px;
+}
+
+.title {
+    float: left;
+    font-variant-caps: all-small-caps;
+}
+
+.menu-container {
+    float: right;
+}
+
+#header {
+    width: 100%;
+    height: calc(100% - 100px);
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#header:before {
+    background: url("../images/PIA11796.jpg") 0 0 repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 800%;
+    height: 800%;
+    z-index: -1;
+    animation: spin 300s linear infinite;
+}
+
+@keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
+}
+
+#header div {
+    position: relative;
+}
+
+a {
+	text-decoration: none;
+	opacity: 0.8;
+}
+
+a:visited {
+    color: rgb(220, 240, 243);
+}
+
+a:hover {
+	 opacity: 1;
+}
+
+#portfolio_templates a {
+    opacity: 1;
+}
+
+.special {
+	 font-variant: small-caps;
+}
+
+#links, #portfolio {
+    min-height: 100px;
+}
+
+#links a, #portfolio a {
+    display: block;
+    padding-bottom: auto;
+    padding-top: auto;
+    margin-bottom: 3px;
+}
+
+#links div {
+	height: 32px;
+	padding-bottom: 2px;
+	margin-bottom: 5px;
+}
+
+#links span {
+    animation: blinker 1s linear infinite;
+}
+  
+ @keyframes blinker {  
+    50% { opacity: 0; }
+}
+
+#portfolio_templates img {
+    width: 100%;
+}
+
+#portfolio_other img, #links img {
+	height: 32px;
+	width: 32px;
+	padding-right: 4px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    border-bottom: 1px solid antiquewhite;
+}
+
+#footer {
+    min-height: 80px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+form {
+    border: 1px solid white;
+    border-radius: 5px;
+    display: inline-block; 
+    padding: 20px 25px 20px 20px; 
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div * {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 3px;
+}
+
+textarea {
+    min-width: 245px;
+    min-height: 200px;
+}
+
+input[type="antibot"] {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	 	 
+	#menu {
+		height: auto;	 
+	}	 
+	 
+	.title, .menu-container {
+		margin: 0 auto;
+		display: block;
+		float: none;
+		margin-bottom: 10px;
+    }
+    
+    #header {
+        height: calc(100% - 200px);
+        min-height: 350px;
+    }
+
+    #about {
+        margin-top: 50px;
+    }
+}
