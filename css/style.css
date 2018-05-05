@@ -10,12 +10,49 @@ body > section {
     padding-top: 12px;
 }
 
-#topmost {
+#header {
+    background: url("../images/2012-08-30_pano_gdansk_sm2.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#header div {
+    position: relative;
+}
+
+#header button {
+    font-variant: small-caps;
+    font-size: 1.2em;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    margin-top: 120px;
+    border: 2px solid antiquewhite inset;
+    color: antiquewhite;
+    background-color: transparent;
+    transition: 1.5s border;
+}
+
+#header button:hover {
+    opacity: 1;
+    background-color: #031138;
+    border: 2px solid transparent;
+    cursor: pointer;
 }
 
 #menu {
     height: 100px;
+}
+
+.menu-container {
+    text-align: center;
+    border: 1px antiquewhite solid;
 }
 
 li {
@@ -35,55 +72,9 @@ li span:hover {
     text-decoration: underline;
 }
 
-.title, .menu-container {
-    text-align: center;
-    border: 1px antiquewhite solid;
-    display: inline-block;
-}
-
-.title, ul {
+ul {
     padding: 16px;
     margin: 0px;
-}
-
-.title {
-    float: left;
-    font-variant-caps: all-small-caps;
-}
-
-.menu-container {
-    float: right;
-}
-
-#header {
-    width: 100%;
-    height: calc(100% - 100px);
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
-
-#header:before {
-    background: url("../images/PIA11796.jpg") 0 0 repeat;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    width: 800%;
-    height: 800%;
-    z-index: -1;
-    animation: spin 300s linear infinite;
-}
-
-@keyframes spin{
-	from{transform:rotate(0deg)}
-	to{transform:rotate(360deg)}	
-}
-
-#header div {
-    position: relative;
 }
 
 a {
@@ -196,11 +187,6 @@ input[type="antibot"] {
 		display: block;
 		float: none;
 		margin-bottom: 10px;
-    }
-    
-    #header {
-        height: calc(100% - 200px);
-        min-height: 350px;
     }
 
     #about {
