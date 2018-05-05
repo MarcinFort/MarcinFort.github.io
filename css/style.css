@@ -50,6 +50,10 @@ body > section {
     height: 100px;
 }
 
+#menu a {
+    color: antiquewhite;
+}
+
 .menu-container {
     text-align: center;
     border: 1px antiquewhite solid;

@@ -15,11 +15,11 @@ $(document).ready(function(){
   
 // Section scroll animation  
   
-  $('#menu a').click(function(){
+  $('#menu a, #header a').click(function() {
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 700);
     return false;
-});
+  });
 
 });
