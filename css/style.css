@@ -59,24 +59,24 @@ body > section {
     border: 1px antiquewhite solid;
 }
 
-li {
+.menu-container li {
     display: inline-block;
     padding-right: 5px;
 }
 
-li:last-child {
+.menu-container li:last-child {
     padding-right: 0px;
 }
 
-li span {
+.menu-container li span {
     padding-left: 4px;
 }
 
-li span:hover {
+.menu-container li span:hover {
     text-decoration: underline;
 }
 
-ul {
+.menu-container ul {
     padding: 16px;
     margin: 0px;
 }
@@ -135,6 +135,10 @@ a:hover {
 	height: 32px;
 	width: 32px;
 	padding-right: 4px;
+}
+
+.planned {
+    padding-top: 25px;
 }
 
 h1, h2 {
