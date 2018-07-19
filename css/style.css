@@ -96,6 +96,7 @@ a:hover {
 
 #portfolio_templates a, #my_apps a {
     opacity: 1;
+    margin-top: 35px;
 }
 
 .special {
