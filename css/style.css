@@ -107,7 +107,9 @@ body > section {
 
 .menu-container li {
     display: inline-block;
-    padding-right: 5px;
+    padding: 20px 5px;
+    transition: all 0.7s;
+    border-radius: 3px;
 }
 
 .menu-container li:last-child {
@@ -118,8 +120,16 @@ body > section {
     padding-left: 4px;
 }
 
-.menu-container li span:hover {
-    text-decoration: underline;
+.menu-container li * {
+    transition: all 0.7s;
+}
+
+.menu-container li:hover{
+    background: #fff;
+}
+
+.menu-container li:hover * {
+    color: #1b1b1b;
 }
 
 .menu-container ul {
