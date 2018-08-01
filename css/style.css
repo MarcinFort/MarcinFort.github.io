@@ -184,7 +184,7 @@ a:hover {
     50% { opacity: 0; }
 }
 
-#portfolio_templates img, #my_apps img {
+#portfolio_templates img, #my_apps img, #my_commercial_projects img {
     width: 100%;
 }
 
